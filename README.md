@@ -1,17 +1,44 @@
 # estilos.css
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Malla Interactiva - Maestría en Educación Especial UCE</title>
-    <link rel="stylesheet" href="estilos.css">
-</head>
-<body>
-    <h1>Maestría en Educación Especial — UCE</h1>
+body {
+    background-color: #f5f0e6;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    color: #333;
+}
 
-    <div id="malla"></div>
+h1 {
+    text-align: center;
+}
 
-    <script src="script.js"></script>
-</body>
-</html>
+#malla {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.caja {
+    background: #fff8f0;
+    border: 2px solid #c2b280;
+    padding: 10px;
+    width: 220px;
+    min-height: 100px;
+    text-align: center;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.caja:hover {
+    transform: scale(1.05);
+}
+
+.caja.aprobada {
+    background: #c5e1c5;
+    border-color: #6da86d;
+}
+
+.caja.bloqueada {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
