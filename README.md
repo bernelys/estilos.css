@@ -1,4 +1,3 @@
-# estilos.css
 body {
     background-color: #f5f0e6;
     font-family: Arial, sans-serif;
